@@ -28,7 +28,7 @@ sudo ./network.sh deployCC -ccn secured -ccp ../asset-transfer-secured-agreement
 
 Set env variables for Org 1
 ```
-cd cd fabric-samples/test-network
+cd fabric-samples/test-network
 export CORE_PEER_TLS_ENABLED=true
 export CORE_PEER_LOCALMSPID="Org1MSP"
 export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
@@ -38,6 +38,7 @@ export CORE_PEER_ADDRESS=localhost:7051
 
 Use another terminal window, set the env variables for Org 2
 ```
+cd fabric-samples/test-network
 export PATH=${PWD}/../bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=$PWD/../config/
 export CORE_PEER_TLS_ENABLED=true
