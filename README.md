@@ -48,5 +48,5 @@ export CORE_PEER_TLS_ROOTCERT_FILE=${PWD}/organizations/peerOrganizations/org2.e
 export CORE_PEER_ADDRESS=localhost:9051
 ```
 
-Follow the remainder of the instructions starting at "Create an asset" in the Hyperledger Fabric tutorial [secured_private_asset_transfer_tutorial.html](https://hyperledger-fabric.readthedocs.io/en/latest/secured_asset_transfer/secured_private_asset_transfer_tutorial.html)
+Follow the remainder of the instructions starting at "Create an asset" in the Hyperledger Fabric tutorial [secured_private_asset_transfer_tutorial.html](https://hyperledger-fabric.readthedocs.io/en/latest/secured_asset_transfer/secured_private_asset_transfer_tutorial.html#create-an-asset)
 
