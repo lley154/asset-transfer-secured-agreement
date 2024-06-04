@@ -31,6 +31,9 @@ cd ../../test-network
 ```
 sudo chmod a+rwx -R organizations  ## this is only done for lab env
 ```
+```
+sudo chmod a+rwx log.txt
+```
 Set env varaibles and deploy chaincode
 ```
 export PATH=${PWD}/../bin:$PATH
