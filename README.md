@@ -5,16 +5,30 @@ Note: Lab #1 must be completed first
 
 ```
 sudo reboot ## restart your vm to free up resources
+```
+```
 sudo apt install jq
+```
+```
 sudo apt install golang-go
+```
+```
 cd fabric-samples/asset-transfer-secured-agreement/chaincode-go
+```
+```
 GO111MODULE=on go mod vendor
 ```
 Go into the test directory
 ```
 cd ../../test-network
-sudo ./network.sh down  
-sudo ./network.sh up createChannel -ca -c mychannel
+```
+```
+./network.sh down  
+```
+```
+./network.sh up createChannel -ca -c mychannel
+```
+```
 sudo chmod a+rwx -R organizations  ## this is only done for lab env
 ```
 Set env varaibles and deploy chaincode
@@ -29,6 +43,8 @@ sudo ./network.sh deployCC -ccn secured -ccp ../asset-transfer-secured-agreement
 Set env variables for Org 1
 ```
 cd fabric-samples/test-network
+```
+```
 export CORE_PEER_TLS_ENABLED=true
 export CORE_PEER_LOCALMSPID="Org1MSP"
 export CORE_PEER_MSPCONFIGPATH=${PWD}/organizations/peerOrganizations/org1.example.com/users/Admin@org1.example.com/msp
@@ -39,6 +55,8 @@ export CORE_PEER_ADDRESS=localhost:7051
 Use another terminal window, set the env variables for Org 2
 ```
 cd fabric-samples/test-network
+```
+```
 export PATH=${PWD}/../bin:${PWD}:$PATH
 export FABRIC_CFG_PATH=$PWD/../config/
 export CORE_PEER_TLS_ENABLED=true
