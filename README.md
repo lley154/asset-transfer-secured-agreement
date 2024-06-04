@@ -32,7 +32,7 @@ cd ../../test-network
 sudo chmod a+rwx -R organizations  ## this is only done for lab env
 ```
 ```
-sudo chmod a+rwx log.txt
+sudo chmod a+rwx log.txt  ## this is only done for lab env
 ```
 Set env varaibles and deploy chaincode
 ```
