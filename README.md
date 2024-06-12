@@ -42,8 +42,7 @@ export FABRIC_CFG_PATH=$PWD/../config/
 ```
 ./network.sh deployCC -ccn secured -ccp ../asset-transfer-secured-agreement/chaincode-go/ -ccl go -ccep "OR('Org1MSP.peer','Org2MSP.peer')"
 ```
-
-Set env variables for Org 1
+Open a new terminal window, set env variables for Org 1
 ```
 cd fabric-samples/test-network
 ```
